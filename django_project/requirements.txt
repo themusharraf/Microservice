@@ -1,0 +1,7 @@
+asgiref==3.6.0
+django==4.1.7
+psycopg2-binary==2.9.5
+python-dotenv==1.0.0
+sqlparse==0.4.3
+tzdata==2022.7
+httpx==0.24.0
