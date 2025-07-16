@@ -58,65 +58,52 @@ Microservice arxitekturasi zamonaviy katta ilovalar uchun eng yaxshi yechim hiso
 ## Microservice arxitekturasi
 ```mermaid
 graph LR
-    A[Microservice Afzalliklari] --> B[Texnik Afzalliklar]
-    A --> C[Biznes Afzalliklari]
-    A --> D[Operatsion Afzalliklar]
+    A[Foydalanuvchi] --> B[API Gateway]
     
-    B --> B1[Mustaqil Development]
-    B --> B2[Turli Texnologiyalar]
-    B --> B3[Fault Isolation]
-    B --> B4[Yengil Testing]
+    B --> C[User Service]
+    B --> D[Product Service]
+    B --> E[Order Service]
+    B --> F[Payment Service]
+    B --> G[Notification Service]
     
-    C --> C1[Tez Deployment]
-    C --> C2[Kichik Jamoalar]
-    C --> C3[Qisman Yangilash]
-    C --> C4[Market Time-to-Market]
+    C --> H[(User Database)]
+    D --> I[(Product Database)]
+    E --> J[(Order Database)]
+    F --> K[(Payment Database)]
+    G --> L[Email Service]
+    G --> M[SMS Service]
     
-    D --> D1[Scalability]
-    D --> D2[Load Distribution]
-    D --> D3[Resource Optimization]
-    D --> D4[High Availability]
+    N[Load Balancer] --> B
     
-    subgraph "Texnik Tafsilotlar"
-        E1[Java, Python, Node.js]
-        E2[MySQL, MongoDB, Redis]
-        E3[Docker, Kubernetes]
-        E4[REST API, GraphQL]
+    subgraph "Monitoring"
+        O[Log Aggregation]
+        P[Metrics Collection]
+        Q[Health Check]
     end
     
-    B2 --> E1
-    B2 --> E2
-    B2 --> E3
-    B2 --> E4
+    C --> O
+    D --> O
+    E --> O
+    F --> O
+    G --> O
     
-    subgraph "Qo'llanish Misolları"
-        F1[Netflix: Video Processing]
-        F2[Amazon: Product Catalog]
-        F3[Uber: Ride Matching]
-        F4[Spotify: Music Streaming]
-    end
+    C --> P
+    D --> P
+    E --> P
+    F --> P
+    G --> P
     
-    C1 --> F1
-    C1 --> F2
-    C1 --> F3
-    C1 --> F4
-    
-    style A fill:#ffeb3b
-    style B fill:#4caf50
-    style C fill:#2196f3
-    style D fill:#ff9800
-    style B1 fill:#c8e6c9
-    style B2 fill:#c8e6c9
-    style B3 fill:#c8e6c9
-    style B4 fill:#c8e6c9
-    style C1 fill:#bbdefb
-    style C2 fill:#bbdefb
-    style C3 fill:#bbdefb
-    style C4 fill:#bbdefb
-    style D1 fill:#ffcc80
-    style D2 fill:#ffcc80
-    style D3 fill:#ffcc80
-    style D4 fill:#ffcc80
+    style A fill:#3352DE
+    style B fill:#089C23
+    style C fill:#FF5733
+    style D fill:#FF5733
+    style E fill:#FF5733
+    style F fill:#7142F7
+    style G fill:#7142F7
+    style H fill:#1787E5
+    style I fill:#1787E5
+    style J fill:#1787E5
+    style K fill:#1787E5
 ```
 
 ## Microservice Afzalliklari
