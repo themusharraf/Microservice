@@ -112,60 +112,60 @@ graph LR
     A[Microservice Afzalliklari] --> B[Texnik Afzalliklar]
     A --> C[Biznes Afzalliklari]
     A --> D[Operatsion Afzalliklar]
-    
+
     B --> B1[Mustaqil Development]
     B --> B2[Turli Texnologiyalar]
     B --> B3[Fault Isolation]
     B --> B4[Yengil Testing]
-    
+
     C --> C1[Tez Deployment]
     C --> C2[Kichik Jamoalar]
     C --> C3[Qisman Yangilash]
     C --> C4[Market Time-to-Market]
-    
+
     D --> D1[Scalability]
     D --> D2[Load Distribution]
     D --> D3[Resource Optimization]
     D --> D4[High Availability]
-    
+
     subgraph "Texnik Tafsilotlar"
         E1[Java, Python, Node.js]
         E2[MySQL, MongoDB, Redis]
         E3[Docker, Kubernetes]
         E4[REST API, GraphQL]
     end
-    
+
     B2 --> E1
     B2 --> E2
     B2 --> E3
     B2 --> E4
-    
+
     subgraph "Qo'llanish Misolları"
         F1[Netflix: Video Processing]
         F2[Amazon: Product Catalog]
         F3[Uber: Ride Matching]
         F4[Spotify: Music Streaming]
     end
-    
+
     C1 --> F1
     C1 --> F2
     C1 --> F3
     C1 --> F4
-    
-    style A fill:#ffeb3b
-    style B fill:#4caf50
+
+    style A fill:#0DA33F
+    style B fill:#1787E5
     style C fill:#2196f3
-    style D fill:#ff9800
-    style B1 fill:#c8e6c9
-    style B2 fill:#c8e6c9
-    style B3 fill:#c8e6c9
-    style B4 fill:#c8e6c9
-    style C1 fill:#bbdefb
-    style C2 fill:#bbdefb
-    style C3 fill:#bbdefb
-    style C4 fill:#bbdefb
-    style D1 fill:#ffcc80
-    style D2 fill:#ffcc80
-    style D3 fill:#ffcc80
-    style D4 fill:#ffcc80
+    style D fill:#1787E5
+    style B1 fill:#F08A07
+    style B2 fill:#F08A07
+    style B3 fill:#F08A07
+    style B4 fill:#F08A07
+    style C1 fill:#FF5733
+    style C2 fill:#FF5733
+    style C3 fill:#FF5733
+    style C4 fill:#FF5733
+    style D1 fill:#7142F7
+    style D2 fill:#7142F7
+    style D3 fill:#7142F7
+    style D4 fill:#7142F7
   ```
